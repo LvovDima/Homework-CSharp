@@ -10,25 +10,25 @@ MinMax(numbers);
 // Console.WriteLine($"Разница между максимальным и минимальным элементами массива: {MinMax(numbers)}");
 int ReadInt(string message)
 {
-Console.Write(message);
-return Convert.ToInt32(Console.ReadLine());
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
 }
 
 void PrintArray(double[] array)
 {
-for (int i = 0; i < array.Length; i++)
-{
-Console.Write(array[i] + "  ");
-}
-Console.WriteLine();
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + "  ");
+    }
+    Console.WriteLine();
 }
 
 void FillArrayRandomNumbers(double[] array)
 {
-for (int i = 0; i < array.Length; i++)
-{
-array[i] = new Random().Next(0, 10) + 0.01 * new Random().Next(0, 101);
-}
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(0, 10) + 0.01 * new Random().Next(0, 101);
+    }
 }
 
 void MinMax(double[] array)
